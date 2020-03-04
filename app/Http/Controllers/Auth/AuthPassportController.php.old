@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Http\Controllers\Auth;
+use App\User;
+//use Carbon\Carbon;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+class AuthPassportController extends Controller
+{
+//	public function login(Request $request) {
+////		dd("is login");
+//		$request->validate([
+//			'email' => 'required|string|email',
+//			'password' => 'required|string',
+//			'remember_me' => 'boolean'
+//		]);
+//		$credentials = request(['email', 'password']);
+//		if(!Auth::attempt($credentials))
+//			return response()->json([
+//				'data' => ["error"=>"Unauthorized login!"]
+//			], 401);
+//		$user = $request->user();
+//		$tokenResult = $user->createToken('Personal Access Token');
+//		$token = $tokenResult->token;
+//		if ($request->remember_me)
+//			$token->expires_at = Carbon::now()->addWeeks(1);
+//		$token->save();
+//		return response()->json([
+//			'access_token' => $tokenResult->accessToken,
+//			'token_type' => 'Bearer',
+//			'expires_at' => Carbon::parse(
+//				$tokenResult->token->expires_at
+//			)->toDateTimeString()
+//		]);
+//	}
+//	public function register(Request $request)
+//	{
+//
+//		$data = $request->validate([
+//			'name' => 'required|string',
+//			'email' => 'required|string|email|unique:users',
+//			'password' => 'required|string'
+//		]);
+////		dd($data["password"]);
+//		$data["password"] = bcrypt($data["password"]);
+//		User::create($data);
+//
+//		return response()->json([
+//			'data' => ["message"=>'Successfully created user!']
+//		], 201);
+//	}
+//	public function logout(Request $request)
+//	{
+//		dd("is logout");
+//		$request->user()->token()->revoke();
+//		return response()->json([
+//			'data' => ["message"=>'Successfully logged out!']
+//		]);
+//	}
+//
+//	/**
+//	 * Get the authenticated User
+//	 *
+//	 * @param Request $request
+//	 *
+//	 * @return \Illuminate\Http\JsonResponse [json] user object
+//	 */
+//	public function user(Request $request)
+//	{
+//		dd("is user");
+//		return response()->json($request->user());
+//	}
+}
